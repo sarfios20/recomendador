@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Recomendador user-user</title>
+	<link rel="stylesheet" type="text/css" href="Edit.css"><!-- Enlace a CSS -->
+	<link rel="icon" type="image/png" href="M.jpg" /><!-- Icono de la pagina -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><!-- Enlace a JQuery -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="script.js"></script><!-- Enlace a JS -->
+	<script src="Tabla.js"></script><!-- Enlace a JS -->
+	<script type="js.js"></script>
+</head>
+<body>
+	<header id="main-header">
+		
+		<a id="logo-header" href="recomendador.html">
+			<span class="site-name">RECOMENDADOR</span>
+			<span class="site-desc">Sistemas de recomendaciones de peliculas</span>
+		</a> <!-- / #logo-header -->
+	</header><!-- / #main-header -->
+<h1>RECOMENDADOR USUARIO-USUARIO</h1>
+
+<hr id="h">
+
+<p style="text-align: center;" >Seleccione un ID del usuario</p>
+<div style="text-align:center;">
+    <select onchange="update()" id="usuarios" style="text-align: center;">
+      <option selected="selected" value="español" ></option><!-- Seleccion de ID del usuario con sus opciones a elegir -->
+    </select>
+  </div>
+    <div style="text-align: center;">
+      <p style="text-align: center;">Items del ranking</p>
+		<form >
+			 <input id="predicciones"  type="text" name="item" style="text-align: center;" ><!-- Seleccion del Item del ranking -->
+		</form>
+		</div>
+       <br>
+       <div style="text-align: center;">
+       <p style="text-align: center;">Ponga un umbral de similitud (de 0 a 0.5)</p>
+		 <input id="umbral" type="text" name="umbral" style="text-align: center;">
+		 </div><!-- Seleccion para el umbral de sismilitud -->
+       <br>
+       <div style="text-align: center;">
+<button style="text-align: center;" onclick="ajax(this)">Recomendar!</button><!-- Boton de recomendar -->
+<br>
+</div>
+<div class="table" id="tabla" style="text-align: center; margin-left: 40%;">
+
+</div>
+<hr id ="h">
+<div class="Prediccion">
+	<div style="font-size: 20px;" id="numero_usuario"></div>
+
+		<select id="peliculas" style="text-align: center;" >
+			<option>Seleccione una pelicula </option>
+		</select>
+		 <div style="text-align: center;">
+       <p style="text-align: center;">Ponga un umbral de similitud (de 0 a 0.5)</p>
+		 <input id="umbral2" type="text" name="umbral" style="text-align: center;">
+		 </div><!-- Seleccion para el umbral de sismilitud -->
+		<button onclick="predecir(this)">Predecir!</button>
+		<br>
+		<p id="destino">Prediccion: </p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</body>
+</html>

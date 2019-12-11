@@ -1,0 +1,180 @@
+/*
+Configuracion del HTML
+*/
+html{
+
+  min-height: 100%;
+  position: relative;
+   
+}
+/*
+Configuración dle cuerpo de la página
+*/
+body{
+	
+	display:block;
+  margin:auto;
+  background-image: url("I.jpg") ;
+
+	font: 100% Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+ 
+  margin-bottom: 50px;
+
+
+}
+/*
+Configuración del header 
+*/
+#tabla{
+
+      margin-left: 40%;
+  
+}
+
+
+#main-header {
+  background: #333;
+  color: white;
+  height: 70px;
+} 
+  #main-header a {
+    color: white;
+  }
+  
+  
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 2s linear infinite;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+ 
+/*
+ * Logo
+ */
+#logo-header {
+  float: left;
+  padding: 15px 0 0 10px;
+  text-decoration: none;
+}
+  #logo-header:hover {
+    color: #0b76a6;
+  }
+  
+  #logo-header .site-name {
+    display: block;
+    font-weight: 700;
+    font-size: 1.2em;
+  }
+  
+  #logo-header .site-desc {
+    display: block;
+    font-weight: 300;
+    font-size: 0.8em;
+    color: #999;
+  }
+.Prediccion{
+   text-align: center;
+}
+
+
+a{
+  text-align: center;
+}
+
+h2{
+	 text-align: center;
+	 font-family: sans-serif;
+}
+
+h1{
+
+	text-align: center;
+	 font-family: sans-serif;
+}
+#h{
+  width: 90%;
+	 border-color:black;
+	  font-family: sans-serif;
+}
+#recomendador{
+	float:none;
+	
+ text-align: center;
+  
+  font-family: sans-serif;
+  
+  flex-wrap: wrap;
+  margin: 0 0 25px; 
+  
+padding: 10px; 
+
+}
+
+.boton_personalizado{
+	 
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 10px;
+    border: 2px solid #0016b0;
+    display: inline-block;
+
+  }
+
+  .boton_personalizado2{
+	 text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 10px;
+    border: 2px solid #0016b0;
+    display: inline-block;
+    margin: 20px;
+
+  }
+  
+#centro{
+  text-align: center;
+}
+#usuarios{
+  text-align: center;
+}
+#main-footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  padding: 20px;
+  margin-top: 40px;
+}
+  #main-footer p {
+    margin: 0;
+  }
+  
+  #main-footer a {
+    color: white;
+    font-size:14;
+  }
